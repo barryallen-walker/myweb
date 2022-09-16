@@ -1,3 +1,4 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,144 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-row{
+  background-image: linear-gradient(to right, white , #808080);
+  margin: 0px !important;
+}
+
+.nav-link{
+  padding: 8px 16px !important;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 600;
+}
+
+.home-img{
+  border-radius: 0px;
+}
+
+.home-details{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.home-name{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 55px;
+  /* line-height: 0.5rem; */
+}
+
+.home-line{
+  width: 60px;
+  height: 4px;
+  margin-bottom: 25px;
+  display: inline-block;
+  background-color: #333;
+}
+
+.home-intro{
+  font-size: 20px;
+}
+
+.home-button{
+  padding: 12px 18px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s linear;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #808080, white) 1;
+  background-image: linear-gradient(to right, white , #808080);
+}
+
+.home-button:hover{
+  box-shadow: 5px 10px #888888;
+  background-image: linear-gradient(to right, #808080, white);
+  border-image: linear-gradient(to right, white, #808080 ) 1;
+}
+
+.socials{
+  list-style: none;
+  text-align: center;
+}
+
+ul{
+  margin-bottom: 0 !important;
+}
+
+.socials li{
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
+.socials-icon{
+  font-size: 16px;
+  color: #000000;
+}
+
+.footer{
+  background-image: linear-gradient(to right, white , #808080);
+}
+
+.gallery-wraper{
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.gallery-wraper h5{
+  margin-bottom: 0 !important;
+}
+
+.gallery-line{
+    width: 450px;
+    height: 2px;
+    /* margin-top: 10px; */
+    margin: auto;
+    display: inline-block;
+    background-color: #333;
+    margin: 0 0 0 10px;
+}
+
+.image-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px 0 8px;
+}
+
+.image-col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 8px;
+}
+
+.image-col img{
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid;
+  border-image: linear-gradient( 	#C0C0C0, #333) 27 / 35px;
+}
+
+@media screen and (max-width: 800px) {
+  .image-col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image-col {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
